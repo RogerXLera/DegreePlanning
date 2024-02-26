@@ -6,7 +6,6 @@ Date: 30/09/2023
 from definitions import *
 from matrices import array_creation
 from read_files import data_dict
-import cplex as cp
 import numpy as np
 import argparse as ap
 import time
@@ -114,7 +113,7 @@ def constraints(matrices,c_T,mdl,variables):
     return constraints_keys
 
 
-def constraints_cp(matrices,c_T,mdl,variables):
+def constraints_docplex(matrices,c_T,mdl,variables):
 
     L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys_ = matrices
     
@@ -208,7 +207,7 @@ def model_cplex(matrices,c_T):
     return mdl,variables,constraint_keys,model_time
 
 
-def model_cp(matrices,c_T,S):
+def model_docplex(matrices,c_T,S):
 
     s_time = time.time()
     L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys_ = matrices
@@ -223,7 +222,7 @@ def model_cp(matrices,c_T,S):
     v = mdl.binary_var_list(len_v,name='v')
     variables = x,v
 
-    constraint_keys = constraints_cp(matrices,c_T,mdl,variables)
+    constraint_keys = constraints_docplex(matrices,c_T,mdl,variables)
     skill_units_matrix = []
     for i in range(len(S.keys())):
         skill_row = []
@@ -248,9 +247,9 @@ def model_cp(matrices,c_T,S):
 
 def solve_model(model,x,x_keys,cp=False):
     
-    #model.print_information()
-    #model.export_as_lp(f'cplex_{cp}.lp')
-    model.solve(log_output=False)
+    model.print_information()
+    model.export_as_lp(f'cplex_{cp}.lp')
+    model.solve(log_output=True)
     #model.report()
     f_ = model.objective_value
 
@@ -344,17 +343,9 @@ if __name__ == '__main__':
     parser.add_argument('-p', type=float, default=1, help='p')
     parser.add_argument('-c', type=int, default=240, help='c')
     parser.add_argument('-l', type=int, default=7, help='l: maximum level. Default: 7')
-    parser.add_argument('-b', type=float, default=0.0, help='percentage of bachelor completed')
     parser.add_argument('-j', type=str, default='0', help='Job index')
-    parser.add_argument('-s', type=str, default='au', help='Start semester')
-    parser.add_argument('-i', type=int, default=None, help='Student ID')
-    parser.add_argument('-y', help='compute job affinity for students', action='store_true')
-    parser.add_argument('-m', help='computes the sum of skill levels', action='store_true' )
-    parser.add_argument('-t', help='compute all the jobs', action='store_true')
-    parser.add_argument('-z', help='compute job affinity for students', action='store_true')
-    parser.add_argument('--cp', help='complex cp', action='store_true')
-    parser.add_argument('-g', type=str, default = 'none', help='store results in csv')
-    parser.add_argument('-f', type=str, default = 'none', help='store results in csv')
+    parser.add_argument('-s', type=str, choices=['au','sp'], default='au',help='Start semester')
+    parser.add_argument('--docplex', help='docplex transformation', action='store_true')
     args = parser.parse_args()
     
     if args.p == -1:
@@ -366,55 +357,27 @@ if __name__ == '__main__':
     c_T = args.c
     n_sem = args.n
     fs = args.s
-    s_id = args.i
-    b = args.b
     m_lev = args.l
 
     course,U,S,J = data_dict(files)
     seasons = ["au","sp"]
-    
-    print(f"n \t | job \t | ja cp (%) | ja ap (%) | time cp (s) | time ap (s)")
-    print(f"----------------------------------------------------------")
-    counter_ = 1
-    for job_id,job in J.items():
-        matrices = array_creation(course,U,S,J,job_id,seasons,n_sem,f_sem=fs,m_cred=40,max_level=m_lev)   
-        L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys = matrices
-
-        model,variables,constraint_keys,model_time,matrix_sv = model_cp(matrices,c_T,S)
-        x,v = variables
-        assignments,f_,solve_time_cp = solve_model(model,x,x_keys,True)
-        z = z_vec(x,x_keys,S,matrix_sv)
-        alpha_cp = job_affinity(t,z)
         
-        model,variables,constraint_keys,model_time = model_cplex(matrices,c_T)
-        x,v,y,z,zl = variables
-        assignments,f_,solve_time_ap = solve_model(model,x,x_keys,False)
-        alpha_ap = job_affinity(t,z)
-
-        print(f"{counter_} \t | {job_id} \t | {alpha_cp:.2f} | {alpha_ap:.2f} | {solve_time_cp:.3f} | {solve_time_ap:.3f} ")
-        counter_ += 1
-        
-
-    """
     
     matrices = array_creation(course,U,S,J,job_id,seasons,n_sem,f_sem=fs,m_cred=40,max_level=m_lev)   
     L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys = matrices
-    if args.cp:
-        model,variables,constraint_keys,model_time,matrix_sv = model_cp(matrices,c_T,S)
+    if args.docplex:
+        model,variables,constraint_keys,model_time,matrix_sv = model_docplex(matrices,c_T,S)
         x,v = variables
     else:
         model,variables,constraint_keys,model_time = model_cplex(matrices,c_T)
         x,v,y,z,zl = variables
 
 
-    assignments,f_,solve_time = solve_model(model,x,x_keys,args.cp)
+    assignments,f_,solve_time = solve_model(model,x,x_keys,args.docplex)
     print_plan(assignments,L)
     print(f"Solving time = {solve_time:.2f}s")
-    if args.cp:
+    if args.docplex:
         z = z_vec(x,x_keys,S,matrix_sv)
     alpha = job_affinity(t,z)
     print("------------------------------------")
     print(f"Job affinity = {alpha:.2f}%")
-
-        
-    """
