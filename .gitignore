@@ -1,2 +1,7 @@
 __pycache__/
 *.lp
+*.cpo
+results/
+venv/
+loop.sh
+metrics.py

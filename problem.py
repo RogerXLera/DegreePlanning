@@ -12,6 +12,7 @@ import time
 import csv
 import os
 from docplex.mp.model import Model
+from docplex.cp.model import CpoModel
 
 
 def constraints(matrices,c_T,mdl,variables):
@@ -175,6 +176,61 @@ def constraints_docplex(matrices,c_T,mdl,variables):
 
     return constraints_keys
 
+def constraints_cp(matrices,c_T,mdl,variables):
+
+    L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys_ = matrices
+    
+    keys = list(x_keys.keys())
+    x,v = variables 
+    # defining constraints
+    len_v = np.shape(f)[1]
+
+    constraints_keys = {}
+    counter = 0
+    
+    # Bx <= 1
+    for i in range(np.shape(B)[0]):
+        constraints_keys.update({counter:f"b{i}"})
+        mdl.add_constraint(sum(B[i,j]*x[j] for j in range(len(keys))) <= 1)
+        counter += 1
+    # Px == 0
+    for i in range(np.shape(P)[0]):
+        constraints_keys.update({counter:f"p{i}"})
+        mdl.add_constraint(sum(P[i,j]*x[j] for j in range(len(keys))) == 0)
+        counter += 1
+
+    # Dx == d
+    for i in range(np.shape(D)[0]):
+        constraints_keys.update({counter:f"d{i}"})
+        mdl.add_constraint(sum(D[i,j]*x[j] for j in range(len(keys))) == d[i])
+        counter += 1
+    # Rx >= rx
+    for i in range(np.shape(R)[0]):
+        constraints_keys.update({counter:f"r{i}"})
+        mdl.add_constraint(sum(R[i,j]*x[j] for j in range(len(keys))) >= sum(r[i,k]*x[k] for k in range(len(keys))))
+        counter += 1
+    # Ex == 1
+    for i in range(np.shape(E)[0]):
+        constraints_keys.update({counter:f"e{i}"})
+        mdl.add_constraint(sum(E[i,j]*x[j] for j in range(len(keys))) == 1)
+        counter += 1
+    # 1v >= 1
+    mdl.add_constraint(sum(v[j] for j in range(len_v)) >= 1)
+    constraints_keys.update({counter:f"v"})
+    counter += 1
+    # Fx >= fv
+    for i in range(np.shape(F)[0]):
+        constraints_keys.update({counter:f"f{i}"})
+        mdl.add_constraint(sum(F[i,j]*x[j] for j in range(len(keys))) >= sum(f[i,k]*v[k] for k in range(len_v)))
+        counter += 1
+    # Gx >= gv
+    for i in range(np.shape(G)[0]):
+        constraints_keys.update({counter:f"g{i}"})
+        mdl.add_constraint(sum(G[i,j]*x[j] for j in range(len(keys))) >= sum(g[i,k]*v[k] for k in range(len_v)))
+        counter += 1
+
+    return constraints_keys
+
 
 
 def model_cplex(matrices,c_T):
@@ -245,22 +301,88 @@ def model_docplex(matrices,c_T,S):
     return mdl,variables,constraint_keys,model_time,skill_units_matrix
 
 
-def solve_model(model,x,x_keys,cp=False):
+def model_cp(matrices,c_T,S):
+
+    s_time = time.time()
+    L,x_keys,B,P,C,D,d,R,or_,r,E,F,f,G,g,t,A,K,keys_ = matrices
+
+    # creating the model
+    keys = list(x_keys.keys())
+    mdl = CpoModel()
+
+    # defining variables
+    x = mdl.binary_var_dict(keys)
+    len_v = np.shape(f)[1]
+    v = mdl.binary_var_list(len_v,name='v')
+    variables = x,v
+
+    constraint_keys = constraints_cp(matrices,c_T,mdl,variables)
+    skill_units_matrix = []
+    for i in range(len(S.keys())):
+        skill_row = []
+        skill_id = list(S.keys())[i]
+        for j,var_e in x_keys.items():
+            unit = var_e[0]
+            sem = var_e[1]
+            skill_lev = 0
+            for skill2 in unit.skills:
+                if skill2.id == skill_id:
+                    skill_lev = skill2.level
+                    break
+            skill_row.append(skill_lev)
+        skill_units_matrix.append(skill_row)
+    # cost function
+    minimize_ = sum(mdl.abs(mdl.min([mdl.max(skill_units_matrix[i][j]*x[j] - t[i] for j in range(len(keys))),0])) for i in range(len(S.keys())))
+    mdl.add(mdl.minimize(minimize_))
+
+    model_time = time.time() - s_time
+
+    return mdl,variables,constraint_keys,model_time,skill_units_matrix
+
+
+def solve_model(model,x,x_keys,docplex=False,cp=False,log=True):
     
-    model.print_information()
-    model.export_as_lp(f'cplex_{cp}.lp')
-    model.solve(log_output=True)
-    #model.report()
-    f_ = model.objective_value
+    if log:
+        model.print_information()
+        if args.cp:
+            model.export_as_cpo(f'cp.cpo')
+        else:
+            model.export_as_lp(f'cplex_{docplex}.lp')
+            
+        mdlsolve = model.solve(log_output=True)
+        model.report()
+    else:
+        if args.cp:
+            mdlsolve = model.solve(LogVerbosity='Quiet')
+        else:
+            mdlsolve = model.solve(log_output=False)
 
-    assignments = {}
-    for i in x_keys.keys():
-        if x[i].solution_value > 0.5:
-            unit = x_keys[i][0]
-            l = x_keys[i][1]
-            assignments.update({i:(unit,l)})
+    if args.cp:
+        f_ = mdlsolve.get_objective_value()
+        sol = mdlsolve.get_all_var_solutions()
+        keys = [k for k in x_keys.keys()]
+        assignments = {}
+        for i in x.keys():
+            value = mdlsolve.get_value(x[i])
 
-    return assignments,f_,model.solve_details.time
+            if value > 0.5:
+                unit = x_keys[i][0]
+                l = x_keys[i][1]
+                assignments.update({i:(unit,l)})
+        
+        return assignments,f_,mdlsolve.get_solve_time(),mdlsolve
+
+    else:
+        f_ = model.objective_value
+
+        assignments = {}
+        for i in x_keys.keys():
+            if x[i].solution_value > 0.5:
+                unit = x_keys[i][0]
+                l = x_keys[i][1]
+                assignments.update({i:(unit,l)})
+
+        return assignments,f_,model.solve_details.time,mdlsolve
 
 def print_plan(assignments,L):
 
@@ -283,16 +405,27 @@ def print_plan(assignments,L):
 
     return None
 
-def z_vec(x,x_keys,S,matrix_sv):
+def z_vec(x,x_keys,S,matrix_sv,mdlsolve):
 
-    z = []
-    for i in range(len(S.keys())):
+    if args.docplex:
+        z = []
+        for i in range(len(S.keys())):
 
-        elem = [matrix_sv[i][j]*x[j].solution_value for j,var_e in x_keys.items()]
-        min_ = min([max(elem)-t[i],0])
-        z += [min_]
+            elem = [matrix_sv[i][j]*x[j].solution_value for j in x.keys()]
+            min_ = min([max(elem)-t[i],0])
+            z += [min_]
 
-    return np.array(z)
+        return np.array(z)
+    else:
+        z = []
+        for i in range(len(S.keys())):
+
+            elem = [matrix_sv[i][j]*mdlsolve.get_value(x[j]) for j,var_e in x_keys.items()]
+            min_ = min([max(elem)-t[i],0])
+            z += [min_]
+
+        return np.array(z)
+
 
       
 def job_affinity(t,z):
@@ -346,6 +479,8 @@ if __name__ == '__main__':
     parser.add_argument('-j', type=str, default='0', help='Job index')
     parser.add_argument('-s', type=str, choices=['au','sp'], default='au',help='Start semester')
     parser.add_argument('--docplex', help='docplex transformation', action='store_true')
+    parser.add_argument('--cp', help='cp solver', action='store_true')
+    parser.add_argument('--log', help='log solver', action='store_true')
     args = parser.parse_args()
     
     if args.p == -1:
@@ -368,16 +503,19 @@ if __name__ == '__main__':
     if args.docplex:
         model,variables,constraint_keys,model_time,matrix_sv = model_docplex(matrices,c_T,S)
         x,v = variables
+    elif args.cp:
+        model,variables,constraint_keys,model_time,matrix_sv = model_cp(matrices,c_T,S)
+        x,v = variables
     else:
         model,variables,constraint_keys,model_time = model_cplex(matrices,c_T)
         x,v,y,z,zl = variables
 
 
-    assignments,f_,solve_time = solve_model(model,x,x_keys,args.docplex)
+    assignments,f_,solve_time,mdlsolve = solve_model(model,x,x_keys,args.docplex,args.cp,args.log)
     print_plan(assignments,L)
     print(f"Solving time = {solve_time:.2f}s")
-    if args.docplex:
-        z = z_vec(x,x_keys,S,matrix_sv)
+    if args.docplex or args.cp:
+        z = z_vec(x,x_keys,S,matrix_sv,mdlsolve)
     alpha = job_affinity(t,z)
     print("------------------------------------")
     print(f"Job affinity = {alpha:.2f}%")
