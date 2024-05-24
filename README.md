@@ -1,8 +1,7 @@
 Degree Planning
 ===================
 This repository contains the implementation of the algorithms and data of the experimental section of the paper
-"Computing Job-Tailored Degree Plans Towards the Acquisition of Professional Skills" by Roger X. Lera-Leri, Filippo Bistaffa, Tomas Trescak, and Juan A. Rodríguez-Aguilar
-submitted to Computers & Operations Research, 2024.
+"Computing Job-Tailored Degree Plans Towards the Acquisition of Professional Skills" by Roger X. Lera-Leri, Filippo Bistaffa, Tomas Trescak, and Juan A. Rodríguez-Aguilar, 2024.
 
 Dependencies
 ----------

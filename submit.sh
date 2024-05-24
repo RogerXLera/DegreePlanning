@@ -1,42 +1,9 @@
 #!/bin/bash
 
-if hash condor_submit 2>/dev/null
+if hash sbatch 2>/dev/null
 then
 
-HOME="/lhome/ext/iiia021/iiia0211"
-ROOT_DIR="$HOME/cmsa-rs"
-EXECUTABLE="$ROOT_DIR/cmsa"
-LOG_DIR="$HOME/log/cmsa-rs/$n-cmsa-$gen-$tb"
-DATA_DIR="$ROOT_DIR/data"
-POOL_DIR="$DATA_DIR/pmf_$n"
-
-mkdir -p $LOG_DIR
-mkdir -p $POOL_DIR
-STDOUT=$POOL_DIR/$filename.stdout
-STDERR=$POOL_DIR/$filename.stderr
-STDLOG=$POOL_DIR/$filename.stdlog
-
-tmpfile=$(mktemp)
-condor_submit 1> $tmpfile <<EOF
-universe = vanilla
-stream_output = True
-stream_error = True
-executable = $EXECUTABLE
-arguments = -i $POOL_DIR/$i.csv -s $seed -b $tb -g $gen $args
-log = $STDLOG
-output = $STDOUT
-error = $STDERR
-getenv = true
-priority = $priority
-queue
-EOF
-
-elif hash sbatch 2>/dev/null
-then
-
-USER=$(whoami)
-BEEGFS="/mnt/beegfs/iiia/$USER"
-ROOT_DIR="$BEEGFS/DPP"
+ROOT_DIR=$(pwd)
 EXECUTABLE="$ROOT_DIR/problem.py"
 LOG_DIR="$ROOT_DIR"
 
@@ -63,12 +30,9 @@ EOF
 
 else
 
-USER=$(whoami)
-ROOT_DIR="/home/roger/Desktop/doctorat/github/ExMIP"
-#ROOT_DIR="/home/roger/Desktop/Roger/github/ExMIP"
-PROBLEM_DIR="$ROOT_DIR/CA"
-EXECUTABLE="$PROBLEM_DIR/problem.py"
-LOG_DIR="$PROBLEM_DIR/results"
+ROOT_DIR=$(pwd)
+EXECUTABLE="$ROOT_DIR/problem.py"
+LOG_DIR="$ROOT_DIR/results"
 
 mkdir -p $LOG_DIR
 mkdir -p $LOG_DIR/$g-$b
