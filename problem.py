@@ -488,7 +488,7 @@ if __name__ == '__main__':
     else:
         p = args.p
     
-    job_id = args.j
+    job_id = args.j.split(',')
     c_T = args.c
     n_sem = args.n
     fs = args.s

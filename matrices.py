@@ -428,7 +428,12 @@ def array_creation(course,U,S,J,job_index,seasons,n_sem=6,f_sem='au',m_cred=40,m
     G,keys_new = G_matrix(x_keys,course)
     keys = merge_dictionaries(keys, keys_new)
     g = g_matrix(course)
-    t = target(J[job_index],S)
+    
+    t = np.zeros(len(S),dtype=np.int8)
+    for job in job_index:
+        t_new = target(J[job],S)
+        t = np.maximum(t,t_new)
+        
     A,keys_new = A_matrix(x_keys,S,max_level)
     keys = merge_dictionaries(keys, keys_new)
     K,keys_new = K_matrix(S,max_level)
@@ -449,7 +454,7 @@ if __name__ == '__main__':
     max_level = 7
     course,U,S,J = data_dict(files)
     seasons = ["au","sp"]
-    matrices = array_creation(course,U,S,J,'122',seasons,n_sem=6,f_sem='au',m_cred=40,max_level=7)
+    matrices = array_creation(course,U,S,J,['122'],seasons,n_sem=6,f_sem='au',m_cred=40,max_level=7)
     
 
     
