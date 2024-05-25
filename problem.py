@@ -441,6 +441,27 @@ def job_affinity(t,z):
         
     return (sum/den)*100
 
+def job_affinity_single(t,z,J,S,job_id):
+
+    from matrices import target
+
+    skill_vec_sol = np.zeros(len(t),dtype=np.int8)
+    for i in range(0,len(t)):
+        try:
+            skill_vec_sol[i] = np.abs(t[i] + z[i].solution_value)
+        except AttributeError:
+            skill_vec_sol[i] = np.abs(t[i] + z[i])
+
+    for j_id in job_id:
+        t_single = target(J[j_id],S)
+        skill_vec_per_job = np.minimum(t_single,skill_vec_sol)
+        num = np.sum(skill_vec_per_job)
+        den = np.sum(t_single)
+        ja = num/den*100
+        print(f"Job affinity per job ({j_id}) = {ja:.2f}%")
+        
+    return None
+
         
 
         
@@ -518,4 +539,6 @@ if __name__ == '__main__':
         z = z_vec(x,x_keys,S,matrix_sv,mdlsolve)
     alpha = job_affinity(t,z)
     print("------------------------------------")
-    print(f"Job affinity = {alpha:.2f}%")
+    print(f"Global Job affinity = {alpha:.2f}%")
+    print("------------------------------------")
+    job_affinity_single(t,z,J,S,job_id)
