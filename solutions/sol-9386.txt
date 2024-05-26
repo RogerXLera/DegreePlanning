@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Games Technology
+	 Human-Computer Interaction
+	 Professional Development
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 2
+	 Computer Networking
+	 Programming Fundamentals
+	 Social Computing
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Technologies for Web Applications
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Database Design and Development
+	 Information Systems in Context
+	 Programming Techniques
+	 Video Games Development
+------------------------------------
+SEMESTER: 5
+	 Computer Graphics
+	 Emerging Trends in Information Systems
+	 Operating Systems Programming
+	 Ethical Hacking Principles and Practice
+------------------------------------
+SEMESTER: 6
+	 Principles of Professional Communication 1
+	 Professional Experience
+	 Web Systems Development
+	 Social Web Analytics
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 31.67%
+------------------------------------
+Job affinity per job (76) = 65.38%
+Job affinity per job (29) = 26.32%
+Job affinity per job (96) = 20.00%
+Job affinity per job (126) = 52.78%
+Job affinity per job (70) = 55.00%
+Job affinity per job (27) = 91.67%
+Job affinity per job (122) = 44.83%
+Job affinity per job (79) = 50.00%
+Job affinity per job (47) = 28.57%
+Job affinity per job (41) = 26.92%
+Job affinity per job (55) = 35.14%
+Job affinity per job (59) = 62.50%
+Job affinity per job (45) = 77.78%
+Job affinity per job (53) = 46.88%
+Job affinity per job (52) = 34.00%
+Job affinity per job (119) = 36.07%
+Job affinity per job (129) = 57.14%
+Job affinity per job (22) = 20.93%
+Job affinity per job (74) = 77.78%
+Job affinity per job (136) = 19.57%

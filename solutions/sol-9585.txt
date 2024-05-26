@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Professional Development
+	 Programming Fundamentals
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Computer Networking
+	 Video Games Development
+	 Social Computing
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Computer Networks and Internets 
+	 Information Systems in Context
+	 Technologies for Web Applications
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 4
+	 Database Design and Development
+	 Programming Techniques
+	 Web Systems Development
+	 Social Web Analytics
+------------------------------------
+SEMESTER: 5
+	 Computer Graphics
+	 Object Oriented Analysis
+	 Games Technology
+	 Operating Systems Programming
+------------------------------------
+SEMESTER: 6
+	 Principles of Professional Communication 1
+	 Network Security
+	 Professional Experience
+	 Applications of Big Data
+------------------------------------
+Solving time = 0.04s
+------------------------------------
+Global Job affinity = 29.52%
+------------------------------------
+Job affinity per job (113) = 23.53%
+Job affinity per job (122) = 44.83%
+Job affinity per job (53) = 46.88%
+Job affinity per job (12) = 31.15%
+Job affinity per job (3) = 62.50%
+Job affinity per job (55) = 35.14%
+Job affinity per job (106) = 50.00%
+Job affinity per job (4) = 60.71%
+Job affinity per job (109) = 63.64%
+Job affinity per job (65) = 42.31%
+Job affinity per job (62) = 55.00%
+Job affinity per job (30) = 33.33%
+Job affinity per job (0) = 17.24%
+Job affinity per job (91) = 54.55%
+Job affinity per job (72) = 72.73%
+Job affinity per job (13) = 33.33%
+Job affinity per job (64) = 28.95%
+Job affinity per job (140) = 36.67%
+Job affinity per job (119) = 36.07%
+Job affinity per job (48) = 42.86%

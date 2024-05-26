@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Professional Development
+	 Programming Fundamentals
+	 Statistical Decision Making
+	 Management Analytics
+------------------------------------
+SEMESTER: 2
+	 Principles of Professional Communication 1
+	 Database Design and Development
+	 Computer Networking
+	 Programming Techniques
+------------------------------------
+SEMESTER: 3
+	 Human-Computer Interaction
+	 Technologies for Web Applications
+	 Systems Analysis and Design
+	 Introduction to Cloud Computing 
+------------------------------------
+SEMESTER: 4
+	 Information Systems Deployment and Management
+	 Social Web Analytics
+	 Mobile Applications Development
+	 Social Computing
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Operating Systems Programming
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 6
+	 Network Security
+	 Professional Experience
+	 Web Systems Development
+	 Cloud Computing Architecture
+------------------------------------
+Solving time = 0.04s
+------------------------------------
+Global Job affinity = 32.26%
+------------------------------------
+Job affinity per job (24) = 85.00%
+Job affinity per job (46) = 100.00%
+Job affinity per job (134) = 75.00%
+Job affinity per job (67) = 100.00%
+Job affinity per job (129) = 57.14%
+Job affinity per job (130) = 43.59%
+Job affinity per job (104) = 78.57%
+Job affinity per job (4) = 60.71%
+Job affinity per job (41) = 17.31%
+Job affinity per job (23) = 66.67%
+Job affinity per job (101) = 80.00%
+Job affinity per job (118) = 39.62%
+Job affinity per job (112) = 20.37%
+Job affinity per job (1) = 30.00%
+Job affinity per job (61) = 38.24%
+Job affinity per job (7) = 35.59%
+Job affinity per job (123) = 60.00%
+Job affinity per job (43) = 50.79%
+Job affinity per job (139) = 22.22%
+Job affinity per job (63) = 37.50%

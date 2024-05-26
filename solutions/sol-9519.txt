@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Professional Development
+	 Programming Fundamentals
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Computer Networking
+	 Programming Techniques
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Principles of Professional Communication 1
+	 Information Systems in Context
+	 Technologies for Web Applications
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 4
+	 Network Security
+	 Information Systems Deployment and Management
+	 Social Computing
+	 Applications of Big Data
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Operating Systems Programming
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 6
+	 Professional Experience
+	 Web Systems Development
+	 Social Web Analytics
+	 Mobile Applications Development
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 27.24%
+------------------------------------
+Job affinity per job (29) = 26.32%
+Job affinity per job (41) = 21.15%
+Job affinity per job (91) = 54.55%
+Job affinity per job (107) = 100.00%
+Job affinity per job (81) = 44.44%
+Job affinity per job (8) = 33.93%
+Job affinity per job (122) = 44.83%
+Job affinity per job (12) = 31.15%
+Job affinity per job (62) = 55.00%
+Job affinity per job (21) = 50.00%
+Job affinity per job (3) = 62.50%
+Job affinity per job (49) = 34.21%
+Job affinity per job (86) = 57.14%
+Job affinity per job (14) = 32.31%
+Job affinity per job (130) = 38.46%
+Job affinity per job (136) = 19.57%
+Job affinity per job (17) = 7.14%
+Job affinity per job (22) = 20.93%
+Job affinity per job (115) = 34.21%
+Job affinity per job (134) = 75.00%

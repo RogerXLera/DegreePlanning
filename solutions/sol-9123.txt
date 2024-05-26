@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Professional Development
+	 Programming Fundamentals
+	 Management Analytics
+------------------------------------
+SEMESTER: 2
+	 Principles of Professional Communication 1
+	 Database Design and Development
+	 Computer Networking
+	 Social Computing
+------------------------------------
+SEMESTER: 3
+	 Computer Networks and Internets 
+	 Technologies for Web Applications
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Network Security
+	 Programming Techniques
+	 Web Systems Development
+	 Social Web Analytics
+------------------------------------
+SEMESTER: 5
+	 Object Oriented Analysis
+	 Operating Systems Programming
+	 Wireless and Mobile Networks
+	 Introduction to Cloud Computing 
+------------------------------------
+SEMESTER: 6
+	 Information Systems Deployment and Management
+	 Professional Experience
+	 Mobile Applications Development
+	 Cloud Computing Architecture
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 31.51%
+------------------------------------
+Job affinity per job (58) = 43.59%
+Job affinity per job (127) = 67.74%
+Job affinity per job (105) = 65.22%
+Job affinity per job (130) = 43.59%
+Job affinity per job (110) = 61.54%
+Job affinity per job (1) = 30.00%
+Job affinity per job (15) = 37.10%
+Job affinity per job (117) = 38.98%
+Job affinity per job (7) = 35.59%
+Job affinity per job (23) = 66.67%
+Job affinity per job (30) = 40.00%
+Job affinity per job (67) = 100.00%
+Job affinity per job (61) = 38.24%
+Job affinity per job (59) = 62.50%
+Job affinity per job (90) = 66.67%
+Job affinity per job (72) = 90.91%
+Job affinity per job (16) = 17.65%
+Job affinity per job (132) = 70.00%
+Job affinity per job (6) = 100.00%
+Job affinity per job (24) = 85.00%

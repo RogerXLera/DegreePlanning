@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Professional Development
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Introduction to Health Informatics
+	 Computer Security
+	 Programming Techniques
+------------------------------------
+SEMESTER: 3
+	 Human-Computer Interaction
+	 Technologies for Web Applications
+	 Operating Systems Programming
+	 Fundamentals of Medical Concepts and Terminology
+------------------------------------
+SEMESTER: 4
+	 Computer Networking
+	 Web Systems Development
+	 Social Web Analytics
+	 Social Computing
+------------------------------------
+SEMESTER: 5
+	 Principles of Professional Communication 1
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Clinical Classification and Coding
+------------------------------------
+SEMESTER: 6
+	 Network Security
+	 Professional Experience
+	 Healthcare Data Environments
+	 Healthcare Software and Systems
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 28.64%
+------------------------------------
+Job affinity per job (11) = 38.67%
+Job affinity per job (10) = 37.18%
+Job affinity per job (29) = 26.32%
+Job affinity per job (137) = 12.90%
+Job affinity per job (22) = 20.93%
+Job affinity per job (91) = 59.09%
+Job affinity per job (47) = 28.57%
+Job affinity per job (138) = 16.67%
+Job affinity per job (110) = 50.00%
+Job affinity per job (111) = 44.83%
+Job affinity per job (27) = 91.67%
+Job affinity per job (12) = 34.43%
+Job affinity per job (4) = 57.14%
+Job affinity per job (89) = 65.00%
+Job affinity per job (25) = 50.00%
+Job affinity per job (109) = 59.09%
+Job affinity per job (90) = 61.90%
+Job affinity per job (67) = 66.67%
+Job affinity per job (75) = 60.00%
+Job affinity per job (9) = 26.42%

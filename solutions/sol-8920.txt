@@ -1,0 +1,64 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Computer Networking
+	 Introduction to Health Informatics
+	 Programming Techniques
+------------------------------------
+SEMESTER: 3
+	 Professional Development
+	 Technologies for Web Applications
+	 Operating Systems Programming
+	 Fundamentals of Medical Concepts and Terminology
+------------------------------------
+SEMESTER: 4
+	 Principles of Professional Communication 1
+	 Web Systems Development
+	 Healthcare Data Environments
+	 Social Web Analytics
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Clinical Classification and Coding
+	 Introduction to Cloud Computing 
+------------------------------------
+SEMESTER: 6
+	 Professional Experience
+	 Healthcare Software and Systems
+	 Social Computing
+	 Cloud Computing Architecture
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 31.60%
+------------------------------------
+Job affinity per job (8) = 37.50%
+Job affinity per job (42) = 33.96%
+Job affinity per job (107) = 100.00%
+Job affinity per job (29) = 31.58%
+Job affinity per job (77) = 66.67%
+Job affinity per job (50) = 55.56%
+Job affinity per job (134) = 75.00%
+Job affinity per job (44) = 63.41%
+Job affinity per job (96) = 40.00%
+Job affinity per job (129) = 57.14%
+Job affinity per job (87) = 100.00%
+Job affinity per job (101) = 80.00%
+Job affinity per job (123) = 60.00%
+Job affinity per job (70) = 65.00%
+Job affinity per job (138) = 16.67%
+Job affinity per job (11) = 38.67%
+Job affinity per job (63) = 37.50%
+Job affinity per job (17) = 7.14%
+Job affinity per job (118) = 37.74%

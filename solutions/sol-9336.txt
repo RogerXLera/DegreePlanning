@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Professional Development
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Computer Networking
+	 Social Web Analytics
+	 Social Computing
+------------------------------------
+SEMESTER: 3
+	 Object Oriented Analysis
+	 Human-Computer Interaction
+	 Wireless and Mobile Networks
+	 Introduction to Cloud Computing 
+------------------------------------
+SEMESTER: 4
+	 Information Systems Deployment and Management
+	 Programming Techniques
+	 Management Analytics
+	 Cloud Computing Architecture
+------------------------------------
+SEMESTER: 5
+	 Principles of Professional Communication 1
+	 Computer Networks and Internets 
+	 Technologies for Web Applications
+	 Operating Systems Programming
+------------------------------------
+SEMESTER: 6
+	 Network Security
+	 Professional Experience
+	 Web Systems Development
+	 Mobile Applications Development
+------------------------------------
+Solving time = 0.04s
+------------------------------------
+Global Job affinity = 30.87%
+------------------------------------
+Job affinity per job (51) = 76.92%
+Job affinity per job (127) = 67.74%
+Job affinity per job (6) = 100.00%
+Job affinity per job (8) = 37.50%
+Job affinity per job (23) = 66.67%
+Job affinity per job (133) = 55.56%
+Job affinity per job (75) = 72.00%
+Job affinity per job (130) = 43.59%
+Job affinity per job (142) = 38.46%
+Job affinity per job (137) = 12.90%
+Job affinity per job (26) = 70.00%
+Job affinity per job (70) = 65.00%
+Job affinity per job (21) = 50.00%
+Job affinity per job (117) = 38.98%
+Job affinity per job (30) = 40.00%
+Job affinity per job (9) = 26.42%
+Job affinity per job (139) = 22.22%
+Job affinity per job (63) = 37.50%
+Job affinity per job (124) = 66.67%
+Job affinity per job (114) = 28.57%

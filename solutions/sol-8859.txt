@@ -1,0 +1,64 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Principles of Professional Communication 1
+	 Human-Computer Interaction
+	 Programming Fundamentals
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Programming Techniques
+	 Social Computing
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Object Oriented Analysis
+	 Technologies for Web Applications
+	 Operating Systems Programming
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Computer Networking
+	 Information Systems in Context
+	 Web Systems Development
+	 Mobile Applications Development
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Professional Development
+	 Emerging Trends in Information Systems
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 6
+	 Network Security
+	 Information Systems Deployment and Management
+	 Professional Experience
+	 Social Web Analytics
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 28.63%
+------------------------------------
+Job affinity per job (30) = 33.33%
+Job affinity per job (17) = 7.14%
+Job affinity per job (140) = 36.67%
+Job affinity per job (138) = 16.67%
+Job affinity per job (63) = 62.50%
+Job affinity per job (52) = 34.00%
+Job affinity per job (114) = 30.00%
+Job affinity per job (134) = 75.00%
+Job affinity per job (67) = 66.67%
+Job affinity per job (61) = 44.12%
+Job affinity per job (105) = 56.52%
+Job affinity per job (128) = 54.55%
+Job affinity per job (124) = 66.67%
+Job affinity per job (86) = 57.14%
+Job affinity per job (139) = 22.22%
+Job affinity per job (89) = 60.00%
+Job affinity per job (77) = 66.67%
+Job affinity per job (62) = 55.00%
+Job affinity per job (11) = 36.00%

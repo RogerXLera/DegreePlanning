@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Professional Development
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Principles of Professional Communication 1
+	 Database Design and Development
+	 Computer Networking
+	 Introduction to Health Informatics
+------------------------------------
+SEMESTER: 3
+	 Object Oriented Analysis
+	 Human-Computer Interaction
+	 Technologies for Web Applications
+	 Introduction to Cloud Computing 
+------------------------------------
+SEMESTER: 4
+	 Programming Techniques
+	 Healthcare Data Environments
+	 Social Web Analytics
+	 Social Computing
+------------------------------------
+SEMESTER: 5
+	 Computer Graphics
+	 Computer Networks and Internets 
+	 Games Technology
+	 Operating Systems Programming
+------------------------------------
+SEMESTER: 6
+	 Professional Experience
+	 Web Systems Development
+	 Video Games Development
+	 Cloud Computing Architecture
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 25.67%
+------------------------------------
+Job affinity per job (17) = 7.14%
+Job affinity per job (128) = 54.55%
+Job affinity per job (130) = 48.72%
+Job affinity per job (3) = 50.00%
+Job affinity per job (47) = 34.29%
+Job affinity per job (6) = 100.00%
+Job affinity per job (85) = 100.00%
+Job affinity per job (41) = 25.00%
+Job affinity per job (96) = 40.00%
+Job affinity per job (8) = 37.50%
+Job affinity per job (7) = 35.59%
+Job affinity per job (0) = 24.14%
+Job affinity per job (118) = 37.74%
+Job affinity per job (44) = 65.85%
+Job affinity per job (22) = 25.58%
+Job affinity per job (10) = 35.90%
+Job affinity per job (32) = 87.50%
+Job affinity per job (80) = 66.67%
+Job affinity per job (117) = 37.29%
+Job affinity per job (114) = 28.57%

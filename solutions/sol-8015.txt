@@ -1,0 +1,62 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Professional Development
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Management Analytics
+------------------------------------
+SEMESTER: 2
+	 Computer Networking
+	 Information Systems Deployment and Management
+	 Programming Techniques
+	 Social Computing
+------------------------------------
+SEMESTER: 3
+	 Principles of Professional Communication 1
+	 Technologies for Web Applications
+	 Operating Systems Programming
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Database Design and Development
+	 Network Security
+	 Web Systems Development
+	 Mobile Applications Development
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Human-Computer Interaction
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 6
+	 Computer Security
+	 Professional Experience
+	 Social Web Analytics
+	 Applications of Big Data
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 28.63%
+------------------------------------
+Job affinity per job (58) = 43.59%
+Job affinity per job (75) = 64.00%
+Job affinity per job (137) = 12.90%
+Job affinity per job (72) = 72.73%
+Job affinity per job (113) = 23.53%
+Job affinity per job (8) = 33.93%
+Job affinity per job (96) = 40.00%
+Job affinity per job (24) = 75.00%
+Job affinity per job (22) = 20.93%
+Job affinity per job (101) = 40.00%
+Job affinity per job (86) = 57.14%
+Job affinity per job (32) = 87.50%
+Job affinity per job (1) = 33.33%
+Job affinity per job (27) = 91.67%
+Job affinity per job (120) = 27.59%
+Job affinity per job (10) = 34.62%
+Job affinity per job (2) = 42.86%

@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Professional Development
+	 Programming Fundamentals
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 2
+	 Principles of Professional Communication 1
+	 Computer Networking
+	 Social Computing
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Object Oriented Analysis
+	 Games Technology
+	 Technologies for Web Applications
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Database Design and Development
+	 Information Systems in Context
+	 Programming Techniques
+	 Web Systems Development
+------------------------------------
+SEMESTER: 5
+	 Computer Graphics
+	 Computer Networks and Internets 
+	 Operating Systems Programming
+	 Ethical Hacking Principles and Practice
+------------------------------------
+SEMESTER: 6
+	 Professional Experience
+	 Video Games Development
+	 Social Web Analytics
+	 Applications of Big Data
+------------------------------------
+Solving time = 0.04s
+------------------------------------
+Global Job affinity = 33.18%
+------------------------------------
+Job affinity per job (43) = 47.62%
+Job affinity per job (134) = 75.00%
+Job affinity per job (66) = 42.86%
+Job affinity per job (140) = 36.67%
+Job affinity per job (69) = 66.67%
+Job affinity per job (89) = 60.00%
+Job affinity per job (21) = 50.00%
+Job affinity per job (49) = 34.21%
+Job affinity per job (71) = 45.83%
+Job affinity per job (1) = 33.33%
+Job affinity per job (58) = 43.59%
+Job affinity per job (56) = 64.71%
+Job affinity per job (29) = 26.32%
+Job affinity per job (23) = 59.26%
+Job affinity per job (107) = 100.00%
+Job affinity per job (122) = 44.83%
+Job affinity per job (102) = 100.00%
+Job affinity per job (16) = 17.65%
+Job affinity per job (142) = 38.46%
+Job affinity per job (110) = 57.69%

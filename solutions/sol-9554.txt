@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Human-Computer Interaction
+	 Programming Fundamentals
+	 Systems Analysis and Design
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Computer Networking
+	 Programming Techniques
+	 Social Computing
+------------------------------------
+SEMESTER: 3
+	 Principles of Professional Communication 1
+	 Information Systems in Context
+	 Professional Development
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 4
+	 Network Security
+	 Mobile Applications Development
+	 Applications of Big Data
+	 Management Analytics
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Technologies for Web Applications
+	 Operating Systems Programming
+------------------------------------
+SEMESTER: 6
+	 Information Systems Deployment and Management
+	 Professional Experience
+	 Web Systems Development
+	 Social Web Analytics
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 31.47%
+------------------------------------
+Job affinity per job (110) = 53.85%
+Job affinity per job (32) = 87.50%
+Job affinity per job (28) = 58.33%
+Job affinity per job (140) = 36.67%
+Job affinity per job (42) = 33.96%
+Job affinity per job (2) = 42.86%
+Job affinity per job (74) = 77.78%
+Job affinity per job (125) = 41.03%
+Job affinity per job (142) = 38.46%
+Job affinity per job (114) = 25.71%
+Job affinity per job (6) = 100.00%
+Job affinity per job (16) = 17.65%
+Job affinity per job (26) = 60.00%
+Job affinity per job (58) = 43.59%
+Job affinity per job (15) = 33.87%
+Job affinity per job (53) = 46.88%
+Job affinity per job (107) = 100.00%
+Job affinity per job (10) = 34.62%
+Job affinity per job (138) = 16.67%
+Job affinity per job (48) = 42.86%

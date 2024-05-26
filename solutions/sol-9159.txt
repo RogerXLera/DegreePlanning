@@ -1,0 +1,65 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Principles of Professional Communication 1
+	 Human-Computer Interaction
+	 Programming Fundamentals
+	 Systems Analysis and Design
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Programming Techniques
+	 Social Computing
+	 Management Analytics
+------------------------------------
+SEMESTER: 3
+	 Object Oriented Analysis
+	 Technologies for Web Applications
+	 Operating Systems Programming
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 4
+	 Computer Networking
+	 Information Systems in Context
+	 Web Systems Development
+	 Mobile Applications Development
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Professional Development
+	 Emerging Trends in Information Systems
+	 Wireless and Mobile Networks
+------------------------------------
+SEMESTER: 6
+	 Network Security
+	 Information Systems Deployment and Management
+	 Professional Experience
+	 Social Web Analytics
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 30.53%
+------------------------------------
+Job affinity per job (32) = 87.50%
+Job affinity per job (147) = 20.00%
+Job affinity per job (11) = 36.00%
+Job affinity per job (5) = 68.42%
+Job affinity per job (95) = 22.22%
+Job affinity per job (130) = 38.46%
+Job affinity per job (53) = 46.88%
+Job affinity per job (96) = 20.00%
+Job affinity per job (100) = 50.00%
+Job affinity per job (141) = 48.15%
+Job affinity per job (49) = 34.21%
+Job affinity per job (89) = 60.00%
+Job affinity per job (8) = 33.93%
+Job affinity per job (31) = 38.10%
+Job affinity per job (138) = 16.67%
+Job affinity per job (41) = 26.92%
+Job affinity per job (30) = 33.33%
+Job affinity per job (23) = 59.26%
+Job affinity per job (6) = 100.00%
+Job affinity per job (111) = 48.28%

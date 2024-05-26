@@ -1,0 +1,52 @@
+****************************************
+***************** PLAN *****************
+****************************************
+
+------------------------------------
+SEMESTER: 1
+	 Introduction to Health Informatics
+	 Human-Computer Interaction
+	 Programming Fundamentals
+	 Statistical Decision Making
+------------------------------------
+SEMESTER: 2
+	 Database Design and Development
+	 Programming Techniques
+	 Healthcare Data Environments
+	 Visual Analytics
+------------------------------------
+SEMESTER: 3
+	 Computer Graphics
+	 Professional Development
+	 Systems Analysis and Design
+	 Operating Systems Programming
+------------------------------------
+SEMESTER: 4
+	 Computer Networking
+	 Video Games Development
+	 Social Web Analytics
+	 Social Computing
+------------------------------------
+SEMESTER: 5
+	 Computer Networks and Internets 
+	 Object Oriented Analysis
+	 Games Technology
+	 Technologies for Web Applications
+------------------------------------
+SEMESTER: 6
+	 Principles of Professional Communication 1
+	 Network Security
+	 Professional Experience
+	 Web Systems Development
+------------------------------------
+Solving time = 0.03s
+------------------------------------
+Global Job affinity = 35.46%
+------------------------------------
+Job affinity per job (144) = 14.81%
+Job affinity per job (107) = 100.00%
+Job affinity per job (52) = 38.00%
+Job affinity per job (130) = 43.59%
+Job affinity per job (49) = 34.21%
+Job affinity per job (27) = 91.67%
+Job affinity per job (119) = 37.70%
