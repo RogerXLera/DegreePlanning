@@ -5,7 +5,7 @@ This repository contains the implementation of the algorithms and data of the ex
 
 Source Code
 ----------
-The source code of P2P-RS is available upon request. If you are interested, feel free to contact me at 
+The source code to solve the Degree Planning Problem (DPP) is available upon request. If you are interested, feel free to contact me at 
 ```
 rlera[at]iiia[dot]csic[dot]es.
 ```
